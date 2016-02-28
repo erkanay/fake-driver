@@ -5,11 +5,7 @@ It corperates relation between non-exist [device driver](https://en.wikipedia.or
 
 ## Build Route
 
-First of all create a [character device file](http://www.tldp.org/LDP/lkmpg/2.4/html/c577.htm) in ```/dev```.
-```{r, engine='bash', count_lines}
-mknod /dev/testDeviceFile c 900 1
-```
-Clone the repository
+First of all clone the repository
 ```{r, engine='bash', count_lines}
 git clone https://github.com/erkanay/minimal-fake-driver.git
 cd minimal-fake-driver
@@ -17,6 +13,10 @@ cd minimal-fake-driver
 Then compile it with
 ```
 make
+```
+Finally create a [character device file](http://www.tldp.org/LDP/lkmpg/2.4/html/c577.htm) in ```/dev```.
+```{r, engine='bash', count_lines}
+mknod /dev/fakedevice c 900 1
 ```
 Check it out with
 ```
