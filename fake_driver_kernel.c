@@ -23,7 +23,7 @@ int device_open(struct inode *inode, struct file *filp)
 {
 	if(down_interruptible(&virtual_device.sem) != 0){
 		printk(KERN_ALERT "fakedevice: could not lock device during open");
-	return -1;
+	        return -1;
 	}
 	printk(KERN_INFO "fakedevice: device opened");
 	return 0;
@@ -68,7 +68,7 @@ static int __init driver_entry(void)
 	ret = alloc_chrdev_region(&dev_num,0,1,DEVICE_NAME);
 	if(ret < 0){
 		printk(KERN_ALERT "fakedevice: failed allocate a major number");
-	return ret;
+	        return ret;
 	}
 	major_number = MAJOR(dev_num);
 	printk(KERN_ALERT "fakedevice: major number is %d", dev_num);
