@@ -1,7 +1,7 @@
 # Minimal Fake Device Driver
 
 This is a minimalistic kernel module which written for learning purposes using C language. 
-It corperates relation between non-exist [device driver](https://en.wikipedia.org/wiki/Device_driver) and user space.
+It conducts relation between non-exist [device driver](https://en.wikipedia.org/wiki/Device_driver) and user space.
 
 ## Build Route
 
