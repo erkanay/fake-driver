@@ -7,8 +7,8 @@ It conducts relation between non-exist [device driver](https://en.wikipedia.org/
 
 First of all clone the repository
 ```{r, engine='bash', count_lines}
-git clone https://github.com/erkanay/minimal-fake-driver.git
-cd minimal-fake-driver
+git clone https://github.com/erkanay/fake-driver.git
+cd fake-driver
 ```
 Then compile it with
 ```
